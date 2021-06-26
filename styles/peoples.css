@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+.people-container{
+    
+    top:300%;
+    left:5%;
+    width:100%;
+    grid-area: people;
+    transition: transform;
+    animation:showPeople 3s
+}
+
+@keyframes showPeople{
+    from{transform:translateX(-1000px);}
+    to{transform: translateX(0px);}
+}
+
+.people-container ul{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    text-align:center;
+    align-items:center;
+    width:90%;
+}
+
+.people-container ul li{
+    margin:5px;
+    flex: 1 1;
+    text-align: left;
+}
+.people-container ul li p{
+    color:black;
+    font-family:Open Sans,sans-serif;
+}
+
+.people-container ul li img{
+    width:200px;
+    height:200px;
+}
+
+.proffession{
+    color:red;
+    font-family:Open Sans,sans-serif;
+}
+
+@media screen and(max-width:500px){
+    .people-container ul{
+        flex-direction: column;
+    }
+
+    .people-container ul li img{
+        width:50px;
+        height:50px;
+    }
+}

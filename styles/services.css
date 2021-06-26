@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap');
+.services{
+  top:90%;
+  grid-area:services;
+}
+
+.services ul{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    list-style: none;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items:center;
+    transition: transform;
+    animation:showServices 2s;
+
+}
+
+@keyframes showServices{
+    from{transform:translateX(1000px);}
+    to{transform:translateX(0px);}
+}
+.services ul li{
+    margin:50px;
+    flex:2;
+}
+.services ul li p{
+    color:black;
+    font-family: 'Cardo', serif;;
+}
+
+.services ul li img{
+    width:50px;
+    height:50px;
+    position: absolute;
+    top:-30%;
+}
+
+.services ul li div{
+    width:60%;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align:justify;
+    margin:90px;
+    left:-20%;
+    position: relative;
+}
+
+@media screen and (max-width:500px){
+    .services ul li div{
+        left:-25%;
+    }
+}

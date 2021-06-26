@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+
+.download-start{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    top:460%;
+    left:30%;
+    grid-area:startDownload;
+    transition: transform;
+    animation: showDownload 2s;
+}
+
+@keyframes showDownload{
+    from{
+        transform: translateY(1000px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.download-start p{
+    color:black;
+    font-family: 'Benne', serif;
+}
+
+.download-start h1{
+    font-family: 'Jomhuria', cursive;
+}
+#download-btn{
+    width:150px;
+    height:40px;
+    background-color:rgb(134, 17, 40);
+    color:white;
+}
+
+@media screen and (max-width:500px){
+    .download-start h1{
+        font-size:12px;
+    }
+
+    .download-start p{
+        font-size: 8px;
+    }
+    #download-btn{
+        width:150px;
+        height:20px;
+        font-size: 10px;
+    }
+}

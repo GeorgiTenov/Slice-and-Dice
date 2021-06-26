@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+.carousel{
+    grid-area: carousel;
+    top:400%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    left:8%;
+    transition: opacity;
+    animation: revealCarousel 2.5s;
+}
+
+@keyframes revealCarousel{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+.carousel img{
+    width:600px;
+    height:300px;
+}
+
+.quotes-container p{
+    font-family: 'Raleway', sans-serif;
+}
+
+.quotes-container{
+    background-color: rgb(41, 6, 73);
+    width:600px;
+    height:300px;
+}
+
+@media screen and (max-width:500px){
+    .carousel img{
+        width:80%;
+        height:250px;
+    }
+
+    .quotes-container{
+        width:80%;
+        height: 150px;
+    }
+    .quotes-container p{
+        font-size:10px;
+    }
+}

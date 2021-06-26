@@ -1,0 +1,59 @@
+/*Railway fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+/*Open sans font*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+/*Cardo font*/
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap');
+
+body{
+    overflow-x: hidden;
+}
+#main-container{
+  overflow-x: hidden;
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px,auto-fit));
+  grid-template-rows: repeat(auto-fit,minmax(100px,auto-fit));
+  grid-template-areas:
+  "header header header header header"
+  "header header header header header"
+  "header header header header header"
+ 
+  "services services services services services"
+  "services services services services services"
+  "services services services services services"
+
+  "projects projects projects projects projects"
+  "projects projects projects projects projects"
+  "projects projects projects projects projects"
+
+  "people people people people  people"
+  "people people people people  people"
+  "people people people people  people"
+
+  "carousel carousel carousel carousel carousel"
+  "carousel carousel carousel carousel carousel"
+  "carousel carousel carousel carousel carousel"
+
+  "startDownload startDownload startDownload startDownload startDownload"
+  "startDownload startDownload startDownload startDownload startDownload"
+  "startDownload startDownload startDownload startDownload startDownload"
+
+
+  "footer footer footer footer footer"
+  "footer footer footer footer footer"
+  "footer footer footer footer footer"
+  ;
+
+}
+
+@media screen and (max-width:500px){
+   #main-container{
+   
+   }
+
+   
+}
